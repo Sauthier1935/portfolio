@@ -431,10 +431,9 @@ body{padding-top:100px;}
 #page-architecture .arch-hero{padding:48px 0 36px;border-bottom:1px solid rgba(190,201,212,0.10);}
 
 /* ═══ LANGUAGE SYSTEM ═══ */
-.L-en,.L-pt,.L-de{display:none !important;}
+.L-en,.L-pt{display:none !important;}
 body.lang-en .L-en{display:revert !important;}
 body.lang-pt .L-pt{display:revert !important;}
-body.lang-de .L-de{display:revert !important;}
 
 /* ═══ LANG PILL ═══ */
 
@@ -460,18 +459,18 @@ body.lang-de .L-de{display:revert !important;}
 <nav>
  <div class="nav-brand">Matheus Sauthier <em id="nav-label">PORTFOLIO</em></div>
  <ul class="nav-links" id="main-nav-links">
- <li><a href="#about" onclick="setTab('portfolio')"><span class="L-en">About</span><span class="L-pt">Sobre</span><span class="L-de">Über mich</span></a></li>
- <li><a href="#experience" onclick="setTab('portfolio')"><span class="L-en">Experience</span><span class="L-pt">Experiência</span><span class="L-de">Erfahrung</span></a></li>
- <li><a href="#leadership" onclick="setTab('portfolio')"><span class="L-en">Leadership</span><span class="L-pt">Liderança</span><span class="L-de">Führung</span></a></li>
- <li><a href="#projects" onclick="setTab('portfolio')"><span class="L-en">Projects</span><span class="L-pt">Projetos</span><span class="L-de">Projekte</span></a></li>
- <li><a href="#skills" onclick="setTab('portfolio')"><span class="L-en">Skills</span><span class="L-pt">Habilidades</span><span class="L-de">Fähigkeiten</span></a></li>
- <li><a href="#contact" onclick="setTab('portfolio')"><span class="L-en">Contact</span><span class="L-pt">Contato</span><span class="L-de">Kontakt</span></a></li>
+ <li><a href="#about" onclick="setTab('portfolio')"><span class="L-en">About</span><span class="L-pt">Sobre</span></a></li>
+ <li><a href="#experience" onclick="setTab('portfolio')"><span class="L-en">Experience</span><span class="L-pt">Experiência</span></a></li>
+ <li><a href="#leadership" onclick="setTab('portfolio')"><span class="L-en">Leadership</span><span class="L-pt">Liderança</span></a></li>
+ <li><a href="#projects" onclick="setTab('portfolio')"><span class="L-en">Projects</span><span class="L-pt">Projetos</span></a></li>
+ <li><a href="#skills" onclick="setTab('portfolio')"><span class="L-en">Skills</span><span class="L-pt">Habilidades</span></a></li>
+ <li><a href="#contact" onclick="setTab('portfolio')"><span class="L-en">Contact</span><span class="L-pt">Contato</span></a></li>
  </ul>
  <div style="display:flex;align-items:center;gap:12px;">
  <div class="lang-pill">
  <button class="lang-btn active" onclick="setLang('en')">EN</button>
  <button class="lang-btn" onclick="setLang('pt')">PT</button>
- <button class="lang-btn" onclick="setLang('de')">DE</button>
+ 
  </div>
  </div>
 </nav>
@@ -481,12 +480,12 @@ body.lang-de .L-de{display:revert !important;}
  <button class="tab-btn active" onclick="setTab('portfolio')" id="tab-portfolio">
  <span class="L-en">Portfolio</span>
  <span class="L-pt">Portfólio</span>
- <span class="L-de">Portfolio</span>
+ 
  </button>
  <button class="tab-btn" onclick="setTab('architecture')" id="tab-architecture">
  <span class="L-en">Data Architecture</span>
  <span class="L-pt">Arquitetura de Dados</span>
- <span class="L-de">Datenarchitektur</span>
+ 
  </button>
 </div>
 
@@ -501,14 +500,14 @@ body.lang-de .L-de{display:revert !important;}
  <div style="display:flex;align-items:center;gap:20px;margin-bottom:24px;">
  <img src="data:image/png;base64,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" alt="Matheus Sauthier" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--brm);flex-shrink:0;">
  <div>
- <div class="kicker" style="margin-bottom:6px;"><span class="L-en">London, UK</span><span class="L-de">London, UK</span><span class="L-pt">Londres, UK</span></div>
+ <div class="kicker" style="margin-bottom:6px;"><span class="L-en">London, UK</span><span class="L-pt">Londres, UK</span></div>
  <div style="font-size:12px;color:var(--txm);line-height:1.5;" class="L-en">Brazilian-Italian, Right to Work in the UK, 5 years in enterprise data</div>
  <div style="font-size:12px;color:var(--txm);line-height:1.5;" class="L-pt">Brasileiro-Italiano, Direito de trabalhar no UK, 5 anos em dados corporativos</div>
  </div>
  </div>
  <h1>Matheus<br>Sauthier</h1>
  <p class="hero-role">
- <span class="L-en">Senior Data Engineer, Tech Lead and Data Platform Architect</span><span class="L-de">Senior Data Engineer, Tech Lead und Datenplattform-Architekt</span>
+ <span class="L-en">Senior Data Engineer, Tech Lead and Data Platform Architect</span>
  <span class="L-pt">Engenheiro de Dados Sênior, Tech Lead e Arquiteto de Plataforma de Dados</span>
  </p>
  <div class="hero-rule"></div>
@@ -563,7 +562,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- ABOUT -->
 <section id="about" class="sec" style="padding-top:52px;padding-bottom:52px;">
  <div class="sec-lbl L-en">About me</div><div class="sec-lbl L-pt">Sobre mim</div>
- <h2 class="sec-h fi"><span class="L-en">The person behind the platform</span><span class="L-de">Die Person hinter der Plattform</span><span class="L-pt">A pessoa por trás da plataforma</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">The person behind the platform</span><span class="L-pt">A pessoa por trás da plataforma</span></h2>
  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:32px;">
  <div>
  <p style="font-size:15px;color:var(--tx);line-height:1.85;margin-bottom:18px;" class="L-en">I grew up in Brazil, built my career from junior engineer to Tech Lead at one of Brazil's largest industrial groups, and relocated to London in pursuit of bigger technical challenges and a broader stage. I hold an Italian passport alongside my Brazilian one which means I come with the ambition of someone who moved continents, and the stability of EU right to work.</p>
@@ -598,7 +597,7 @@ body.lang-de .L-de{display:revert !important;}
 <section id="experience" class="sec">
  <div class="sec-lbl L-en">Career History</div><div class="sec-lbl L-pt">Histórico Profissional</div>
  <h2 class="sec-h fi">
- <span class="L-en">Work Experience</span><span class="L-de">Berufserfahrung</span><span class="L-pt">Experiência Profissional</span>
+ <span class="L-en">Work Experience</span><span class="L-pt">Experiência Profissional</span>
  </h2>
  <p class="sec-sub fi">
  <span class="L-en">5 years progressing from data engineering to technical leadership and people management at enterprise scale.</span>
@@ -696,7 +695,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- LEADERSHIP -->
 <section id="leadership" class="sec">
  <div class="sec-lbl L-en">People & Teams</div><div class="sec-lbl L-pt">Pessoas & Times</div>
- <h2 class="sec-h fi"><span class="L-en">Leadership Profile</span><span class="L-de">Führungsprofil</span><span class="L-pt">Perfil de Liderança</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">Leadership Profile</span><span class="L-pt">Perfil de Liderança</span></h2>
  <p class="sec-sub fi">
  <span class="L-en">I lead people the same way I build systems with clear structure, high standards, and room for ownership.</span>
  <span class="L-pt">Lidero pessoas da mesma forma que construo sistemas com estrutura clara, padrões elevados e espaço para autonomia.</span>
@@ -769,7 +768,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- KEY PROJECTS -->
 <section id="projects" class="sec">
  <div class="sec-lbl L-en">Selected Work</div><div class="sec-lbl L-pt">Trabalhos Selecionados</div>
- <h2 class="sec-h fi"><span class="L-en">Key Projects</span><span class="L-de">Schlüsselprojekte</span><span class="L-pt">Projetos Chave</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">Key Projects</span><span class="L-pt">Projetos Chave</span></h2>
  <p class="sec-sub fi">
  <span class="L-en">Enterprise-scale deliveries across platform architecture, people analytics, and AI strategy.</span>
  <span class="L-pt">Entregas em escala corporativa abrangendo arquitetura de plataforma, analytics de pessoas e estratégia de IA.</span>
@@ -904,8 +903,8 @@ body.lang-de .L-de{display:revert !important;}
  <div class="proj-tags"><span class="proj-tag">Databricks</span><span class="proj-tag">Power BI</span><span class="proj-tag">Real-time</span><span class="proj-tag">Logistics</span><span class="proj-tag">Manufacturing</span></div>
  </div>
  <div class="proj-mets">
- <div class="pm"><div class="pm-n">⚡</div><div class="pm-l L-en">Time visibility</div><div class="pm-l L-pt">Visibilidade em tempo real</div><div class="pm-l L-de">Zeit-Übersicht</div></div>
- <div class="pm"><div class="pm-n">Biz</div><div class="pm-l L-en">Rules ownership</div><div class="pm-l L-pt">Regras de negócio</div><div class="pm-l L-de">Geschäftsregeln</div></div>
+ <div class="pm"><div class="pm-n">⚡</div><div class="pm-l L-en">Time visibility</div><div class="pm-l L-pt">Visibilidade em tempo real</div></div>
+ <div class="pm"><div class="pm-n">Biz</div><div class="pm-l L-en">Rules ownership</div><div class="pm-l L-pt">Regras de negócio</div></div>
  </div>
  </div>
 
@@ -959,7 +958,7 @@ body.lang-de .L-de{display:revert !important;}
  </div>
  <div class="proj-mets">
  <div class="pm"><div class="pm-n L-en">Real</div><div class="pm-n L-pt">Real</div><div class="pm-l L-en">Time cost simulation</div><div class="pm-l L-pt">Simulação de custo</div></div>
- <div class="pm"><div class="pm-n">→0</div><div class="pm-l L-en">Manual modelling</div><div class="pm-l L-pt">Modelagem manual</div><div class="pm-l L-de">Manuelle Modellierung</div></div>
+ <div class="pm"><div class="pm-n">→0</div><div class="pm-l L-en">Manual modelling</div><div class="pm-l L-pt">Modelagem manual</div></div>
  </div>
  </div>
 
@@ -968,7 +967,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- GITHUB PROJECTS -->
 <section id="github" class="sec">
  <div class="sec-lbl L-en">Personal Work</div><div class="sec-lbl L-pt">Trabalho Pessoal</div>
- <h2 class="sec-h fi"><span class="L-en">GitHub Projects</span><span class="L-de">GitHub-Projekte</span><span class="L-pt">Projetos no GitHub</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">GitHub Projects</span><span class="L-pt">Projetos no GitHub</span></h2>
  <p class="sec-sub fi">
  <span class="L-en">Personal projects exploring ML, AI engineering, and data engineering fundamentals outside the corporate context.</span>
  <span class="L-pt">Projetos pessoais explorando ML, engenharia de IA e fundamentos de engenharia de dados fora do contexto corporativo.</span>
@@ -1035,7 +1034,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- SKILLS -->
 <section id="skills" class="sec">
  <div class="sec-lbl L-en">Technical Profile</div><div class="sec-lbl L-pt">Perfil Técnico</div>
- <h2 class="sec-h fi"><span class="L-en">Skills &amp; Stack</span><span class="L-de">Fähigkeiten &amp; Stack</span><span class="L-pt">Habilidades &amp; Stack</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">Skills &amp; Stack</span><span class="L-pt">Habilidades &amp; Stack</span></h2>
  <p class="sec-sub fi">
  <span class="L-en">Deep expertise across the Azure and Databricks ecosystem, with a strong foundation in data engineering and platform governance.</span>
  <span class="L-pt">Expertise profunda no ecossistema Azure e Databricks, com base sólida em engenharia de dados e governança de plataforma.</span>
@@ -1079,7 +1078,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- VALUE PROP -->
 <section class="sec" style="padding-bottom:48px;">
  <div class="sec-lbl L-en">Why it matters</div><div class="sec-lbl L-pt">Por que importa</div>
- <h2 class="sec-h fi"><span class="L-en">What I bring to a team</span><span class="L-de">Was ich einem Team bringe</span><span class="L-pt">O que trago para um time</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">What I bring to a team</span><span class="L-pt">O que trago para um time</span></h2>
  <p class="sec-sub fi" style="margin-bottom:32px;">
  <span class="L-en">The combination that's hard to find: someone who can architect the system, lead the team, and still write the code.</span>
  <span class="L-pt">A combinação difícil de encontrar: alguém que arquiteta o sistema, lidera o time e ainda escreve o código.</span>
@@ -1139,7 +1138,7 @@ body.lang-de .L-de{display:revert !important;}
 <!-- CONTACT -->
 <section id="contact">
  <div class="sec-lbl L-en">Get in touch</div><div class="sec-lbl L-pt">Entre em contato</div>
- <h2 class="sec-h fi"><span class="L-en">Contact</span><span class="L-de">Kontakt</span><span class="L-pt">Contato</span></h2>
+ <h2 class="sec-h fi"><span class="L-en">Contact</span><span class="L-pt">Contato</span></h2>
  <div class="contact-grid">
  <div>
  <p style="font-size:15px;color:var(--tx);line-height:1.75;">
@@ -1159,7 +1158,7 @@ body.lang-de .L-de{display:revert !important;}
  </div>
  <div>
  <div class="avail-box">
- <div class="avail-title"><span class="L-en">Senior Data Engineering<br>&amp; Tech Lead roles</span><span class="L-de">Senior Data Engineering<br>&amp; Tech Lead Positionen</span><span class="L-pt">Posições de Engenharia de Dados<br>Sênior &amp; Tech Lead</span></div>
+ <div class="avail-title"><span class="L-en">Senior Data Engineering<br>&amp; Tech Lead roles</span><span class="L-pt">Posições de Engenharia de Dados<br>Sênior &amp; Tech Lead</span></div>
  <div class="avail-desc"><span class="L-en">UK / EU / Remote. Specialisation in Azure, Databricks, and enterprise data platform architecture. Available for full-time roles and senior consulting engagements.</span><span class="L-pt">UK / EU / Remoto. Especialização em Azure, Databricks e arquitetura de plataforma de dados corporativa. Disponível para posições full-time e consultorias sênior.</span></div>
  <div class="passport-line">🇮🇹 Italian (EU) passport, 🇬🇧 Right to Work in the UK, 🇧🇷 Brazilian passport</div>
  </div>
@@ -1183,26 +1182,26 @@ body.lang-de .L-de{display:revert !important;}
  <div class="sec-lbl" style="margin-bottom:10px;">
  <span class="L-en">Architecture Reference</span>
  <span class="L-pt">Referência de Arquitetura</span>
- <span class="L-de">Architektur-Referenz</span>
+ 
  </div>
  <h2 class="sec-h" style="font-size:clamp(24px,3.5vw,36px);margin-bottom:10px;">
  <span class="L-en">Enterprise Data Platform Architecture</span>
  <span class="L-pt">Arquitetura de Plataforma de Dados Corporativa</span>
- <span class="L-de">Enterprise-Datenplattform-Architektur</span>
+ 
  </h2>
  <p style="font-size:14px;color:var(--txm);max-width:680px;line-height:1.75;">
  <span class="L-en">A reference architecture for enterprise-grade data platforms on Azure and Databricks. Based on real implementations. Client names removed. Hover any component to see what it does and where I worked on it directly.</span>
  <span class="L-pt">Arquitetura de referência para plataformas de dados corporativas no Azure e Databricks. Baseada em implementações reais. Nomes de clientes removidos. Passe o cursor sobre qualquer componente para ver detalhes.</span>
- <span class="L-de">Referenzarchitektur für Enterprise-Datenplattformen auf Azure und Databricks. Basierend auf realen Implementierungen. Kundennamen entfernt. Bewegen Sie die Maus über eine Komponente für Details.</span>
+ 
  </p>
  <div class="legend" style="margin-top:24px;margin-bottom:0;">
- <div class="leg"><div class="leg-dot" style="background:#5B7185;"></div><span class="L-en">Data Sources</span><span class="L-pt">Fontes de Dados</span><span class="L-de">Datenquellen</span></div>
- <div class="leg"><div class="leg-dot" style="background:#3A78D4;"></div><span class="L-en">Azure Services</span><span class="L-pt">Serviços Azure</span><span class="L-de">Azure-Dienste</span></div>
- <div class="leg"><div class="leg-dot" style="background:#A88640;"></div><span class="L-en">Bronze Layer</span><span class="L-pt">Camada Bronze</span><span class="L-de">Bronze-Schicht</span></div>
- <div class="leg"><div class="leg-dot" style="background:#BEC9D4;"></div><span class="L-en">Silver Layer</span><span class="L-pt">Camada Silver</span><span class="L-de">Silber-Schicht</span></div>
- <div class="leg"><div class="leg-dot" style="background:#E09040;"></div><span class="L-en">Gold Layer</span><span class="L-pt">Camada Gold</span><span class="L-de">Gold-Schicht</span></div>
- <div class="leg"><div class="leg-dot" style="background:#5CB882;"></div><span class="L-en">Output</span><span class="L-pt">Saída</span><span class="L-de">Ausgabe</span></div>
- <div class="leg"><div style="width:14px;height:14px;border-radius:3px;border:2px solid #3A78D4;"></div><span class="L-en">Where I worked</span><span class="L-pt">Onde atuei</span><span class="L-de">Hier tätig</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#5B7185;"></div><span class="L-en">Data Sources</span><span class="L-pt">Fontes de Dados</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#3A78D4;"></div><span class="L-en">Azure Services</span><span class="L-pt">Serviços Azure</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#A88640;"></div><span class="L-en">Bronze Layer</span><span class="L-pt">Camada Bronze</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#BEC9D4;"></div><span class="L-en">Silver Layer</span><span class="L-pt">Camada Silver</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#E09040;"></div><span class="L-en">Gold Layer</span><span class="L-pt">Camada Gold</span></div>
+ <div class="leg"><div class="leg-dot" style="background:#5CB882;"></div><span class="L-en">Output</span><span class="L-pt">Saída</span></div>
+ <div class="leg"><div style="width:14px;height:14px;border-radius:3px;border:2px solid #3A78D4;"></div><span class="L-en">Where I worked</span><span class="L-pt">Onde atuei</span></div>
  </div>
 </div>
 
@@ -1625,60 +1624,60 @@ body.lang-de .L-de{display:revert !important;}
  <div class="sec-lbl">
  <span class="L-en">Project Portfolio</span>
  <span class="L-pt">Portfólio de Projetos</span>
- <span class="L-de">Projektportfolio</span>
+ 
  </div>
  <h2 class="sec-h">
  <span class="L-en">Data Projects Delivered</span>
  <span class="L-pt">Projetos de Dados Entregues</span>
- <span class="L-de">Durchgeführte Datenprojekte</span>
+ 
  </h2>
  <p class="sec-sub">
  <span class="L-en">Each project applied layers of this architecture in real enterprise environments. No client names are disclosed.</span>
  <span class="L-pt">Cada projeto aplicou camadas desta arquitetura em ambientes corporativos reais. Nenhum nome de cliente é divulgado.</span>
- <span class="L-de">Jedes Projekt wendete Schichten dieser Architektur in realen Unternehmensumgebungen an. Keine Kundennamen werden offengelegt.</span>
+ 
  </p>
  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-azure">Azure</span><span class="pca-badge pca-bronze">Bronze</span><span class="pca-badge pca-silver">Silver</span><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Output</span></div>
- <div class="pca-title"><span class="L-en">People Analytics Platform</span><span class="L-pt">Plataforma de People Analytics</span><span class="L-de">People Analytics Plattform</span></div>
- <div class="pca-desc"><span class="L-en">End-to-end HR analytics platform built from scratch. Integrated SAP HCM, Gupy, Concur, Apollus and Rosetta Stone. 158 dashboards, 478 views, 7 RLS segments, 1,000+ users. Grew into a 4-person Data Science team.</span><span class="L-pt">Plataforma de analytics de RH ponta a ponta. Integrou SAP HCM, Gupy, Concur, Apollus e Rosetta Stone. 158 dashboards, 478 views, 7 segmentos RLS, 1.000+ usuários.</span><span class="L-de">End-to-End HR-Analyseplattform. Integration von SAP HCM, Gupy, Concur, Apollus und Rosetta Stone. 158 Dashboards, 478 Views, 7 RLS-Segmente, 1.000+ Nutzer.</span></div>
- <div class="pca-meta"><span class="L-en">SAP HCM, Gupy, Concur, Apollus, Rosetta Stone, SharePoint</span><span class="L-pt">SAP HCM, Gupy, Concur, Apollus, Rosetta Stone, SharePoint</span><span class="L-de">SAP HCM, Gupy, Concur, Apollus, Rosetta Stone, SharePoint</span></div>
+ <div class="pca-title"><span class="L-en">People Analytics Platform</span><span class="L-pt">Plataforma de People Analytics</span></div>
+ <div class="pca-desc"><span class="L-en">End-to-end HR analytics platform built from scratch. Integrated SAP HCM, Gupy, Concur, Apollus and Rosetta Stone. 158 dashboards, 478 views, 7 RLS segments, 1,000+ users. Grew into a 4-person Data Science team.</span><span class="L-pt">Plataforma de analytics de RH ponta a ponta. Integrou SAP HCM, Gupy, Concur, Apollus e Rosetta Stone. 158 dashboards, 478 views, 7 segmentos RLS, 1.000+ usuários.</span></div>
+ <div class="pca-meta"><span class="L-en">SAP HCM, Gupy, Concur, Apollus, Rosetta Stone, SharePoint</span><span class="L-pt">SAP HCM, Gupy, Concur, Apollus, Rosetta Stone, SharePoint</span></div>
  </div>
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-azure">Azure</span><span class="pca-badge pca-bronze">Bronze</span><span class="pca-badge pca-silver">Silver</span><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Power BI</span></div>
- <div class="pca-title"><span class="L-en">Pentaho to Databricks Cloud Migration</span><span class="L-pt">Migração Pentaho para Databricks</span><span class="L-de">Pentaho zu Databricks Cloud-Migration</span></div>
- <div class="pca-desc"><span class="L-en">Full migration of legacy ETL to Databricks Medallion Architecture. 500+ tables from SAP HCM, S/4HANA, SharePoint and 5 APIs. Zero data loss. Full CI/CD governance.</span><span class="L-pt">Migração completa do ETL legado para Databricks Medallion Architecture. 500+ tabelas, zero perda de dados, governança CI/CD completa.</span><span class="L-de">Vollständige Migration von Legacy-ETL zu Databricks Medallion Architecture. 500+ Tabellen, null Datenverlust, vollständige CI/CD-Governance.</span></div>
- <div class="pca-meta"><span class="L-en">SAP HCM, SAP S/4HANA, SharePoint, 5 external APIs</span><span class="L-pt">SAP HCM, SAP S/4HANA, SharePoint, 5 APIs externas</span><span class="L-de">SAP HCM, SAP S/4HANA, SharePoint, 5 externe APIs</span></div>
+ <div class="pca-title"><span class="L-en">Pentaho to Databricks Cloud Migration</span><span class="L-pt">Migração Pentaho para Databricks</span></div>
+ <div class="pca-desc"><span class="L-en">Full migration of legacy ETL to Databricks Medallion Architecture. 500+ tables from SAP HCM, S/4HANA, SharePoint and 5 APIs. Zero data loss. Full CI/CD governance.</span><span class="L-pt">Migração completa do ETL legado para Databricks Medallion Architecture. 500+ tabelas, zero perda de dados, governança CI/CD completa.</span></div>
+ <div class="pca-meta"><span class="L-en">SAP HCM, SAP S/4HANA, SharePoint, 5 external APIs</span><span class="L-pt">SAP HCM, SAP S/4HANA, SharePoint, 5 APIs externas</span></div>
  </div>
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-azure">Azure</span><span class="pca-badge pca-silver">Silver</span><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Dashboards</span></div>
- <div class="pca-title"><span class="L-en">Microsoft Fabric to Databricks Migration</span><span class="L-pt">Migração Microsoft Fabric para Databricks</span><span class="L-de">Microsoft Fabric zu Databricks Migration</span></div>
- <div class="pca-desc"><span class="L-en">Migrated a Microsoft Fabric environment to Databricks, reducing operational costs and significantly increasing data volume capacity and pipeline performance.</span><span class="L-pt">Migração de ambiente Microsoft Fabric para Databricks, reduzindo custos operacionais e aumentando significativamente a capacidade de volume de dados e performance de pipelines.</span><span class="L-de">Migration einer Microsoft Fabric-Umgebung zu Databricks mit signifikanter Kostenreduzierung und gesteigerter Datendurchsatzkapazität.</span></div>
- <div class="pca-meta"><span class="L-en">Focus: Cost optimisation, performance, volume increase</span><span class="L-pt">Foco: Otimização de custos, performance, aumento de volume</span><span class="L-de">Fokus: Kostenoptimierung, Performance, Volumensteigerung</span></div>
+ <div class="pca-title"><span class="L-en">Microsoft Fabric to Databricks Migration</span><span class="L-pt">Migração Microsoft Fabric para Databricks</span></div>
+ <div class="pca-desc"><span class="L-en">Migrated a Microsoft Fabric environment to Databricks, reducing operational costs and significantly increasing data volume capacity and pipeline performance.</span><span class="L-pt">Migração de ambiente Microsoft Fabric para Databricks, reduzindo custos operacionais e aumentando significativamente a capacidade de volume de dados e performance de pipelines.</span></div>
+ <div class="pca-meta"><span class="L-en">Focus: Cost optimisation, performance, volume increase</span><span class="L-pt">Foco: Otimização de custos, performance, aumento de volume</span></div>
  </div>
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-bronze">Bronze</span><span class="pca-badge pca-silver">Silver</span><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Real-time</span></div>
- <div class="pca-title"><span class="L-en">Logistics and Manufacturing Control Room</span><span class="L-pt">Sala de Controle Logístico e Produção</span><span class="L-de">Logistik und Produktions-Kontrollraum</span></div>
- <div class="pca-desc"><span class="L-en">Unified real-time data layer feeding an operational control room for logistics and manufacturing leadership. Single source of truth for shop floor and transit operations.</span><span class="L-pt">Camada de dados unificada em tempo real para sala de controle operacional de logística e produção. Fonte única de verdade para operações.</span><span class="L-de">Einheitliche Echtzeit-Datenschicht für operativen Kontrollraum der Logistik und Fertigung. Single Source of Truth für Produktions- und Transportoperationen.</span></div>
- <div class="pca-meta"><span class="L-en">Focus: Real-time visibility, logistics, manufacturing</span><span class="L-pt">Foco: Visibilidade em tempo real, logística, produção</span><span class="L-de">Fokus: Echtzeit-Übersicht, Logistik, Fertigung</span></div>
+ <div class="pca-title"><span class="L-en">Logistics and Manufacturing Control Room</span><span class="L-pt">Sala de Controle Logístico e Produção</span></div>
+ <div class="pca-desc"><span class="L-en">Unified real-time data layer feeding an operational control room for logistics and manufacturing leadership. Single source of truth for shop floor and transit operations.</span><span class="L-pt">Camada de dados unificada em tempo real para sala de controle operacional de logística e produção. Fonte única de verdade para operações.</span></div>
+ <div class="pca-meta"><span class="L-en">Focus: Real-time visibility, logistics, manufacturing</span><span class="L-pt">Foco: Visibilidade em tempo real, logística, produção</span></div>
  </div>
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Power BI</span></div>
- <div class="pca-title"><span class="L-en">Costs and Controllership Platform</span><span class="L-pt">Plataforma de Custos e Controladoria</span><span class="L-de">Kosten und Controlling-Plattform</span></div>
- <div class="pca-desc"><span class="L-en">Centralised data product for finance and controllership. Replaced fragmented manual reporting with a governed self-service platform for 100+ users across finance functions.</span><span class="L-pt">Produto de dados centralizado para finanças e controladoria. Substituiu relatórios manuais fragmentados por plataforma self-service para 100+ usuários.</span><span class="L-de">Zentrales Datenprodukt für Finanzen und Controlling. Ersetzte manuelle Berichte durch eine Self-Service-Plattform für 100+ Nutzer.</span></div>
- <div class="pca-meta"><span class="L-en">Finance, controllership, 100+ users, self-service analytics</span><span class="L-pt">Finanças, controladoria, 100+ usuários, analytics self-service</span><span class="L-de">Finanzen, Controlling, 100+ Nutzer, Self-Service-Analytik</span></div>
+ <div class="pca-title"><span class="L-en">Costs and Controllership Platform</span><span class="L-pt">Plataforma de Custos e Controladoria</span></div>
+ <div class="pca-desc"><span class="L-en">Centralised data product for finance and controllership. Replaced fragmented manual reporting with a governed self-service platform for 100+ users across finance functions.</span><span class="L-pt">Produto de dados centralizado para finanças e controladoria. Substituiu relatórios manuais fragmentados por plataforma self-service para 100+ usuários.</span></div>
+ <div class="pca-meta"><span class="L-en">Finance, controllership, 100+ users, self-service analytics</span><span class="L-pt">Finanças, controladoria, 100+ usuários, analytics self-service</span></div>
  </div>
 
  <div class="pca-card">
  <div class="pca-layers"><span class="pca-badge pca-gold">Gold</span><span class="pca-badge pca-out">Databricks Apps</span></div>
- <div class="pca-title"><span class="L-en">Salary Equalisation Simulator</span><span class="L-pt">Simulador de Equiparação Salarial</span><span class="L-de">Gehaltsanpassungs-Simulator</span></div>
- <div class="pca-desc"><span class="L-en">Interactive salary simulation app built with Databricks Apps. HR leadership models cost impact of equalisation scenarios in real time, replacing weeks of spreadsheet modelling.</span><span class="L-pt">Aplicação interativa de simulação salarial com Databricks Apps. Liderança de RH modela impacto de custo de cenários em tempo real, substituindo semanas de planilhas.</span><span class="L-de">Interaktive Gehaltsimulationsanwendung mit Databricks Apps. HR-Führungsebene modelliert Kostenwirkungen in Echtzeit statt wochenlanger Tabellenmodellierung.</span></div>
- <div class="pca-meta"><span class="L-en">Databricks Apps, HR analytics, cost simulation, interactive</span><span class="L-pt">Databricks Apps, HR analytics, simulação de custos, interativo</span><span class="L-de">Databricks Apps, HR-Analytik, Kostensimulation, interaktiv</span></div>
+ <div class="pca-title"><span class="L-en">Salary Equalisation Simulator</span><span class="L-pt">Simulador de Equiparação Salarial</span></div>
+ <div class="pca-desc"><span class="L-en">Interactive salary simulation app built with Databricks Apps. HR leadership models cost impact of equalisation scenarios in real time, replacing weeks of spreadsheet modelling.</span><span class="L-pt">Aplicação interativa de simulação salarial com Databricks Apps. Liderança de RH modela impacto de custo de cenários em tempo real, substituindo semanas de planilhas.</span></div>
+ <div class="pca-meta"><span class="L-en">Databricks Apps, HR analytics, cost simulation, interactive</span><span class="L-pt">Databricks Apps, HR analytics, simulação de custos, interativo</span></div>
  </div>
 
  </div>
